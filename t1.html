@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content aggregator</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .jumbotron {
+        background-color: black;
+        color: white;
+        padding: 100px 25px;
+    } 
+    .bg-grey {
+        background-color: white;
+        color: black;
+    }
+    
+    .container-fluid {
+        padding: 60px 50px;
+    }
+    .logo {
+        font-size: 200px;
+    }
+    @media screen and (max-width: 768px) {
+        .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+        }
+    }
+    .logo-small {
+        font-size: 50px;
+    }
+
+    .logo {
+        font-size: 200px;
+    }
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+    }
+    .carousel-control.right, .carousel-control.left {
+        background-image: none;
+        color: black;
+    }
+
+    .carousel-indicators li {
+        background-color: rgb(46, 46, 46);
+    }
+
+    .carousel-indicators li.active {
+        background-color: black;
+    }
+
+    .item h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        font-weight: 400;
+        font-style: italic;
+        margin: 70px 0; 
+    }
+
+    .item span {
+        font-style: normal;
+    }
+    
+    .navbar {
+        margin-bottom: 0%;
+        background-color: white;
+        z-index: 9999;
+        border: none;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+    }
+
+    .navbar li a, .navbar .navbar-brand{
+        color: black !important;
+    }
+
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+  color: white !important;
+  background-color: black !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: white !important;
+}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+
+.jumbotron {
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+}
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+    </style>
+</head>
+<body class="jumbotron text-center" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div>
+    <h1>Content Aggregator</h1>
+    <p>We provide data from diff: webs</p>
+    <form class="form-inline">
+        <div class="input-group">
+            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container-fluid">
+   <div class="row">
+       <div class="col-sm-8">
+        <h2>About Us</h2>
+    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum earum cumque sit voluptas, voluptatibus laborum exercitationem repudiandae delectus consectetur alias repellendus officiis ducimus in beatae quae doloribus id odio.</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, officiis at delectus atque dicta, quam neque hic velit cum corporis pariatur, nihil sunt perferendis inventore voluptatum repellat minus. Deserunt, quasi!</p>
+    <button class="btn btn-default btn-lg">Get in Touch</button>
+</div>
+<div class="col-sm-4">
+<span class="glyphicon glyphicon-user logo"></span>
+</div>
+</div>
+</div>
+
+<div class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo"></span>
+            </div>
+            <div class="col-sm-8">
+    <h2>Latest Posts</h2>
+    <h4><strong>category 1: </strong><br><br>
+        post no.1<br>
+        post no.2<br>
+        post no.3<br><br></h4>
+
+      <h4> <strong>category 2: </strong><br><br>
+        post no.1<br>
+        post no.2<br>
+        post no.3</h4>
+   
+</div>
+</div>
+</div>
+<div class="container-fluid text-center" style="background-color: rgb(46, 46, 46); color: white;">
+    <h2>CONTENT</h2>
+    <h4>What we provide</h4><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-education"></span>
+            <h4>EDUCATION</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam voluptates praesentium delectus fugit error, atque vero magni dolorem voluptas. Libero rerum veritatis quos, dicta iste repellendus obcaecati aperiam vero iure.</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-sunglasses"></span>
+            <h4>FASHION</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus, alias, unde optio in molestiae voluptatibus corrupti neque nisi itaque ut error dicta. Ullam et perspiciatis possimus nihil quae aliquid.</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-briefcase"></span>
+            <h4>BUSINESS</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia porro odit dolore quisquam ut quo nemo aut non recusandae quis beatae soluta eaque aliquam iusto, ipsa sed repudiandae fuga impedit.</p>
+        </div>
+    </div>
+
+<div class="container-fluid text-center bg-grey">
+    <h2><strong>FAQ's</strong></h2>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="thumbanil">
+                <h3><strong>Welcome to Content Aggregator</strong></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos asperiores voluptatem rem maiores fugiat consectetur dignissimos nesciunt. Aut excepturi quasi veritatis vitae nobis suscipit recusandae asperiores consequuntur tempora deleniti!</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <p><strong>The Idea</strong></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque omnis praesentium architecto cupiditate, maxime quidem corrupti saepe explicabo perspiciatis veniam quaerat culpa ab ea atque ex labore amet voluptatem iusto.</p>
+            </div>
+             </div>
+             <div class="col-sm-4">
+                 <div class="thumbnail">
+                     <p><strong>Are you stealing other people's content?</strong></p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate accusamus quas aspernatur nam doloribus natus et iure, exercitationem numquam incidunt fugiat eligendi omnis laboriosam quos rem maxime nulla veniam repellat.</p>
+                 </div>
+             </div>
+             <div class="col-sm-4">
+                 <div class="thumbnail">
+                     <p><strong>How i built this site?</strong></p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sapiente voluptatum quos assumenda. Facere, sunt eligendi ex tempora voluptatem ea tenetur in debitis quaerat cumque. Ipsam reiciendis officia ducimus labore?</p>
+                 </div>
+             </div>
+    </div>
+</div>
+<h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel" style="color: black; background-color: white;">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <h4>"this website is the best. I am so happy with the result!"<br><span style="font-style: normal;">Michael Roe, Vice President, Comment Box</span> </h4>
+        </div>
+        <div class="item">
+            <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+        </div>
+        <div class="item">
+            <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+        </div>
+    </div>
+
+    <!--left and right controls-->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Karachi, Pakistan</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +92..</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--adding nav -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about us">ABOUT</a></li>
+          <li><a href="#latest news">LATEST</a></li>
+          <li><a href="#FAQ'a">FAQ</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </footer>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== ""){
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
+    </script>
+</body>
+</html>
